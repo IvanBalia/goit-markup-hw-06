@@ -77,6 +77,8 @@ header a {
   font-weight: 500;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
 }
 header a.link-active {
   position: relative;
@@ -730,6 +732,7 @@ h1 {
 .form {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 .call-to-action {
   font-family: Roboto;
@@ -767,6 +770,7 @@ h1 {
   box-sizing: border-box;
   border-radius: 4px;
   height: 120px;
+  padding: 12px;
 }
 .form-field textarea::placeholder {
   font-family: Roboto;
@@ -787,9 +791,6 @@ h1 {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.form button {
-  background-color: rgb(30, 28, 163);
-}
 .icon-form {
   position: absolute;
   top: 34px;
@@ -802,4 +803,76 @@ h1 {
 }
 .form-field input:focus {
   border: 1px solid var(--hover-color);
+}
+.form-field textarea:focus {
+  border: 1px solid var(--hover-color);
+}
+.checkbox {
+  display: flex;
+  margin-right: 11px;
+  margin-left: 12px;
+  margin-top: 20px;
+  align-items: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.checkbox input {
+  appearance: none;
+}
+.icon-check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url(/images/frame.svg);
+}
+.checkbox label {
+  margin-left: 8px;
+}
+.checkbox a {
+  text-decoration: underline;
+  color: var(--hover-color);
+}
+.checkbox input:checked + span {
+  background-image: url(/images/check.svg);
+  background-color: var(--hover-color);
+}
+.send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+  background: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--hover-color) 0px solid;
+  border-radius: 4px;
+}
+.send:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.send:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.send-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--invert-text-color);
+  letter-spacing: 0.06em;
 }
