@@ -830,7 +830,7 @@ h1 {
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-image: url(/images/frame.svg);
+  background-image: url(../images/frame.svg);
 }
 .checkbox label {
   margin-left: 8px;
@@ -840,7 +840,7 @@ h1 {
   color: var(--hover-color);
 }
 .checkbox input:checked + span {
-  background-image: url(/images/check.svg);
+  background-image: url(../images/check.svg);
   background-color: var(--hover-color);
 }
 .send {
